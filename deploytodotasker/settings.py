@@ -168,3 +168,8 @@ SOCIAL_AUTH_PIPELINE = (
 )
 
 STRIPE_API_KEY = 'sk_test_lOwRe5hiXBypwwU6x2PPgXmj'
+
+try:
+    from.local_settings import *
+except ImportError:
+    pass
