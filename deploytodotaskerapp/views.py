@@ -14,18 +14,20 @@ from django.db.models import Sum, Count, Case, When
 def home(request):
     return redirect(registration_home)
 
+
 @login_required(login_url='/registration/login/')
 def registration_home(request):
     return redirect(registration_order)
 
+
 @login_required(login_url='/registration/login/')
 def registration_account(request):
-    user_form = UserFormForEdit(instance = request.user)
-    registration_form = RegistrationForm(instance = request.user.registration)
+    user_form = UserFormForEdit(instance=request.user)
+    registration_form = RegistrationForm(instance=request.user.registration)
 
     if request.method == "POST":
-        user_form = UserFormForEdit(request.POST, instance = request.user)
-        registration_form = RegistrationForm(request.POST, request.FILES, instance = request.user.registration)
+        user_form = UserFormForEdit(request.POST, instance=request.user)
+        registration_form = RegistrationForm(request.POST, request.FILES, instance=request.user.registration)
 
         if user_form.is_valid() and registration_form.is_valid():
             user_form.save()
@@ -41,8 +43,9 @@ def registration_account(request):
 
 @login_required(login_url='/registration/login/')
 def registration_meal(request):
-    meals = Meal.objects.filter(registration = request.user.registration).order_by("-id")
+    meals = Meal.objects.filter(registration=request.user.registration).order_by("-id")
     return render(request, 'registration/meal.html', {"meals": meals})
+
 
 @login_required(login_url='/registration/login/')
 def registration_add_meal(request):
@@ -61,12 +64,13 @@ def registration_add_meal(request):
         "form": form
     })
 
+
 @login_required(login_url='/registration/login/')
 def registration_edit_meal(request, meal_id):
-    form = MealForm(instance = Meal.objects.get(id = meal_id))
+    form = MealForm(instance=Meal.objects.get(id=meal_id))
 
     if request.method == "POST":
-        form = MealForm(request.POST, request.FILES, instance = Meal.objects.get(id = meal_id))
+        form = MealForm(request.POST, request.FILES, instance=Meal.objects.get(id=meal_id))
 
         if form.is_valid():
             form.save()
@@ -84,14 +88,15 @@ def registration_order(request):
     """
     if request.method == "POST":
 
-        order = Order.objects.get(id = request.POST["id"])
+        order = Order.objects.get(id=request.POST["id"])
 
         if order.status == Order.COOKING:
             order.status = Order.READY
             order.save()
 
-    orders = Order.objects.filter().order_by("-id")
+    orders = Order.objects.filter(registration=request.user.registration).order_by("-id")
     return render(request, 'registration/order.html', {"orders": orders})
+
 
 @login_required(login_url='/registration/login/')
 def registration_report(request):
@@ -107,23 +112,22 @@ def registration_report(request):
 
     # Calculate weekdays
     today = datetime.now()
-    current_weekdays = [today + timedelta(days = i) for i in range(0 - today.weekday(), 7 - today.weekday())]
+    current_weekdays = [today + timedelta(days=i) for i in range(0 - today.weekday(), 7 - today.weekday())]
 
     for day in current_weekdays:
         delivered_orders = Order.objects.filter(
-            registration = request.user.registration,
-            status = Order.DELIVERED,
-            created_at__year = day.year,
-            created_at__month = day.month,
-            created_at__day = day.day
+            registration=request.user.registration,
+            status=Order.DELIVERED,
+            created_at__year=day.year,
+            created_at__month=day.month,
+            created_at__day=day.day
         )
         revenue.append(sum(order.total for order in delivered_orders))
         orders.append(delivered_orders.count())
 
-
     # Top 3 Meals
-    top3_meals = Meal.objects.filter(registration = request.user.registration)\
-                     .annotate(total_order = Sum('orderdetails__quantity'))\
+    top3_meals = Meal.objects.filter(registration=request.user.registration) \
+                     .annotate(total_order=Sum('orderdetails__quantity')) \
                      .order_by("-total_order")[:3]
 
     meal = {
@@ -133,9 +137,9 @@ def registration_report(request):
 
     # Top 3 Drivers
     top3_drivers = Driver.objects.annotate(
-        total_order = Count(
-            Case (
-                When(order__registration = request.user.registration, then = 1)
+        total_order=Count(
+            Case(
+                When(order__registration=request.user.registration, then=1)
             )
         )
     ).order_by("-total_order")[:3]
@@ -152,6 +156,7 @@ def registration_report(request):
         "driver": driver
     })
 
+
 def registration_sign_up(request):
     user_form = UserForm()
     registration_form = RegistrationForm()
@@ -167,8 +172,8 @@ def registration_sign_up(request):
             new_registration.save()
 
             login(request, authenticate(
-                username = user_form.cleaned_data["username"],
-                password = user_form.cleaned_data["password"]
+                username=user_form.cleaned_data["username"],
+                password=user_form.cleaned_data["password"]
             ))
 
             return redirect(registration_home)
