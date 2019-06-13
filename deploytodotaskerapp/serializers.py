@@ -7,6 +7,7 @@ from deploytodotaskerapp.models import Registration, \
     Order, \
     OrderDetails
 
+
 class RegistrationSerializer(serializers.ModelSerializer):
     logo = serializers.SerializerMethodField()
 
@@ -18,6 +19,7 @@ class RegistrationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Registration
         fields = ("id", "name", "phone", "address", "logo")
+
 
 class MealSerializer(serializers.ModelSerializer):
     image = serializers.SerializerMethodField()
@@ -31,6 +33,7 @@ class MealSerializer(serializers.ModelSerializer):
         model = Meal
         fields = ("id", "name", "short_description", "image", "price")
 
+
 # ORDER SERIALIZER
 class OrderCustomerSerializer(serializers.ModelSerializer):
     name = serializers.ReadOnlyField(source="user.get_full_name")
@@ -39,6 +42,7 @@ class OrderCustomerSerializer(serializers.ModelSerializer):
         model = Customer
         fields = ("id", "name", "avatar", "phone", "address")
 
+
 class OrderDriverSerializer(serializers.ModelSerializer):
     name = serializers.ReadOnlyField(source="user.get_full_name")
 
@@ -46,15 +50,18 @@ class OrderDriverSerializer(serializers.ModelSerializer):
         model = Customer
         fields = ("id", "name", "avatar", "phone", "address")
 
+
 class OrderRegistrationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Registration
         fields = ("id", "name", "phone", "address")
 
+
 class OrderMealSerializer(serializers.ModelSerializer):
     class Meta:
         model = Meal
         fields = ("id", "name", "price")
+
 
 class OrderDetailsSerializer(serializers.ModelSerializer):
     meal = OrderMealSerializer()
@@ -63,12 +70,13 @@ class OrderDetailsSerializer(serializers.ModelSerializer):
         model = OrderDetails
         fields = ("id", "meal", "quantity", "sub_total")
 
+
 class OrderSerializer(serializers.ModelSerializer):
     customer = OrderCustomerSerializer()
     driver = OrderDriverSerializer()
     registration = OrderRegistrationSerializer()
-    order_details = OrderDetailsSerializer(many = True)
-    status = serializers.ReadOnlyField(source = "get_status_display")
+    order_details = OrderDetailsSerializer(many=True)
+    status = serializers.ReadOnlyField(source="get_status_display")
 
     class Meta:
         model = Order
