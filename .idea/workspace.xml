@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b45c4185-2553-4af4-a667-efed559dd33b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/deploytodotaskerapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploytodotaskerapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploytodotaskerapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploytodotaskerapp/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +29,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1207">
@@ -37,6 +37,15 @@
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -95,6 +104,7 @@
         <option value="$PROJECT_DIR$/deploytodotaskerapp/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/deploytodotaskerapp/templates/registration/sign_up.html" />
         <option value="$PROJECT_DIR$/deploytodotaskerapp/models.py" />
+        <option value="$PROJECT_DIR$/deploytodotaskerapp/tests.py" />
       </list>
     </option>
   </component>
@@ -229,12 +239,12 @@
       <workItem from="1560337537637" duration="138000" />
       <workItem from="1560337737048" duration="2584000" />
       <workItem from="1560353698990" duration="11475000" />
-      <workItem from="1560399400635" duration="9911000" />
+      <workItem from="1560399400635" duration="10241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29815000" />
+    <option name="totallyTimeSpent" value="30145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -374,9 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -496,6 +503,13 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
         </state>
       </provider>
     </entry>
