@@ -42,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="538">
+              <caret line="92" column="69" lean-forward="true" selection-start-line="92" selection-start-column="69" selection-end-line="92" selection-end-column="69" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -54,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
-              <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+            <state relative-caret-position="8">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -78,10 +78,10 @@
       <find>filter()</find>
       <find>rela</find>
       <find>filter</find>
-      <find>related</find>
       <find>food</find>
       <find>casca</find>
       <find>restaurant</find>
+      <find>related</find>
     </findStrings>
     <replaceStrings>
       <replace>Registration</replace>
@@ -236,12 +236,12 @@
       <workItem from="1560337537637" duration="138000" />
       <workItem from="1560337737048" duration="2584000" />
       <workItem from="1560353698990" duration="11475000" />
-      <workItem from="1560399400635" duration="7168000" />
+      <workItem from="1560399400635" duration="7413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27072000" />
+    <option name="totallyTimeSpent" value="27317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -471,16 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://N:/COURSE/UNGAYDEMY/CR/PYTHON/SOURCECODE/Python/foodtasker_Task_15_Completed/foodtasker_Task_15_Completed/foodtaskerapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -488,10 +478,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="92" column="69" lean-forward="true" selection-start-line="92" selection-start-column="69" selection-end-line="92" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+        <state relative-caret-position="8">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
