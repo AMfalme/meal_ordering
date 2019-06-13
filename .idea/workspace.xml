@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b45c4185-2553-4af4-a667-efed559dd33b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/deploytodotaskerapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploytodotaskerapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploytodotaskerapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploytodotaskerapp/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="b45c4185-2553-4af4-a667-efed559dd33b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +27,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deploytodotasker/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="174" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://N:/COURSE/UNGAYDEMY/CR/PYTHON/SOURCECODE/Python/foodtasker_Task_15_Completed/foodtasker_Task_15_Completed/foodtaskerapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -51,13 +57,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="8">
               <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/apis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="74" column="27" lean-forward="true" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,8 +98,8 @@
       <find>filter</find>
       <find>food</find>
       <find>casca</find>
-      <find>restaurant</find>
       <find>related</find>
+      <find>restaurant</find>
     </findStrings>
     <replaceStrings>
       <replace>Registration</replace>
@@ -117,10 +135,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="728" />
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -236,12 +253,12 @@
       <workItem from="1560337537637" duration="138000" />
       <workItem from="1560337737048" duration="2584000" />
       <workItem from="1560353698990" duration="11475000" />
-      <workItem from="1560399400635" duration="7413000" />
+      <workItem from="1560399400635" duration="8568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27317000" />
+    <option name="totallyTimeSpent" value="28472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -388,13 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deploytodotasker/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2958">
-          <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="174" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68">
@@ -407,15 +417,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/apis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/templates/registration/report.html">
       <provider selected="true" editor-type-id="text-editor" />
@@ -495,6 +496,23 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/apis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="74" column="27" lean-forward="true" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploytodotasker/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="174" selection-end-column="8" />
         </state>
       </provider>
     </entry>
