@@ -36,9 +36,12 @@ def registration_account(request):
         "registration_form": registration_form
     })
 
+
+# DOUBT changed filter according to video 32 at 1:21
+
 @login_required(login_url='/registration/login/')
 def registration_meal(request):
-    meals = Meal.objects.filter().order_by("-id")
+    meals = Meal.objects.filter(registration = request.user.registration).order_by("-id")
     return render(request, 'registration/meal.html', {"meals": meals})
 
 @login_required(login_url='/registration/login/')
