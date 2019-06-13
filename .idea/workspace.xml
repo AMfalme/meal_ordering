@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b45c4185-2553-4af4-a667-efed559dd33b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/deploytodotaskerapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploytodotaskerapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploytodotaskerapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/deploytodotaskerapp/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploytodotaskerapp/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/deploytodotaskerapp/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploytodotaskerapp/templates/registration/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/deploytodotaskerapp/templates/registration/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploytodotaskerapp/templates/registration/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/deploytodotaskerapp/templates/registration/sign_up.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="76" column="65" selection-start-line="76" selection-start-column="65" selection-end-line="76" selection-end-column="65" />
+            <state relative-caret-position="1207">
+              <caret line="71" column="91" selection-start-line="71" selection-start-column="91" selection-end-line="71" selection-end-column="91" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -46,13 +42,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://N:/COURSE/UNGAYDEMY/CR/PYTHON/SOURCECODE/Python/foodtasker_Task_15_Completed/foodtasker_Task_15_Completed/foodtaskerapp/models.py">
+        <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/templates/registration/order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-584">
-              <caret line="16" column="62" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -78,6 +71,7 @@
       <find>related</find>
       <find>get_sta</find>
       <find>cascade</find>
+      <find>CASCADE</find>
     </findStrings>
     <replaceStrings>
       <replace>Registration</replace>
@@ -235,12 +229,12 @@
       <workItem from="1560337537637" duration="138000" />
       <workItem from="1560337737048" duration="2584000" />
       <workItem from="1560353698990" duration="11475000" />
-      <workItem from="1560399400635" duration="9664000" />
+      <workItem from="1560399400635" duration="9911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29568000" />
+    <option name="totallyTimeSpent" value="29815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -464,13 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/templates/registration/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/templates/registration/sign_up.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -488,10 +475,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/migrations/0005_orderdetails.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/templates/registration/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/deploytodotaskerapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="76" column="65" selection-start-line="76" selection-start-column="65" selection-end-line="76" selection-end-column="65" />
+        <state relative-caret-position="1207">
+          <caret line="71" column="91" selection-start-line="71" selection-start-column="91" selection-end-line="71" selection-end-column="91" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
